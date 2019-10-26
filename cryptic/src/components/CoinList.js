@@ -3,6 +3,9 @@ import axios from 'axios';
 
 import {apiKey} from '../ApiKey';
 
+import CoinCard from './CoinCard'
+
+
 const CoinList = () => {
     const [apiData, setApiData] = useState(null);
 
@@ -17,8 +20,10 @@ const CoinList = () => {
 
     return (
       <>
+      
       <h1>Yeet</h1>
-      </>
+      <CoinCard />
+     </>
     )
   }
 
