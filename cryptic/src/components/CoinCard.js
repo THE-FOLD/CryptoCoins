@@ -12,7 +12,7 @@ const CoinCard = (props) => {
   const name = props.name;
   const price = props.price;
   const volume = props.volume;
-  const timeStamp = props.timeStamp;
+  const timeStamp = props.timestamp;
   console.log("time",timeStamp);
 
   //yeet
@@ -25,7 +25,7 @@ const CoinCard = (props) => {
           <CardTitle>Name: {name}</CardTitle>    
           <CardSubtitle>Price: {price}</CardSubtitle>
           <CardText>Volume:{volume}</CardText>
-          <CardText>timeStamp:{timeStamp}</CardText>
+          <CardText>timeStamp: {timeStamp}</CardText>
           <Button>Button</Button>
         </CardBody>
       </Card>

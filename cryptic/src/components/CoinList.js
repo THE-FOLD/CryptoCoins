@@ -53,7 +53,7 @@ const CoinList = () => {
 
     return (
       <>
-      <CoinCard label ={bitCoin.Label} name={bitCoin.Name} price={bitCoin.Price} volume={bitCoin.Volume_24h} timestamp={new Date(bitCoin.Timestamp)} />
+      <CoinCard label ={bitCoin.Label} name={bitCoin.Name} price={bitCoin.Price} volume={bitCoin.Volume_24h} timestamp={new Date(bitCoin.Timestamp).toLocaleDateString("en-US")} />
      </>
     )
     
