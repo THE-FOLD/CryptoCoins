@@ -3,16 +3,29 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
+import axios from 'axios';
+
 
 const CoinCard = (props) => {
+
+  const label = props.label;
+  const name = props.name;
+  const price = props.price;
+  const volume = props.volume;
+  const timeStamp = props.timeStamp;
+  console.log("time",timeStamp);
+
+  //yeet
+
   return (
-    <div>
+    <div className='Div-Card'>
       <Card>
-        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        <CardImg src="https://cryptocoins-server.herokuapp.com/images/xrp" top width="100%" alt="Card image cap" style={{width: '32px', height: '32px'}} />
         <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <CardTitle>Name: {name}</CardTitle>    
+          <CardSubtitle>Price: {price}</CardSubtitle>
+          <CardText>Volume:{volume}</CardText>
+          <CardText>timeStamp:{timeStamp}</CardText>
           <Button>Button</Button>
         </CardBody>
       </Card>
